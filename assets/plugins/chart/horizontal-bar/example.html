@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HorizontalBar</title>
+    <script src="bar.js" type="text/javascript" charset="gb2312"></script>
+    <script src="example-data.js" type="text/javascript" charset="gb2312"></script>
+    <script src="../dygraphs/dygraph-combined.js" type="text/javascript" charset="gb2312"></script>
+    <script type="text/javascript" charset="gb2312">
+        var ctrl;
+        function onload() {
+            var elm = window.document.getElementById("cvs");
+            ctrl = new HorizontalBar(elm, {
+                start: "2014-10-22 00:00",  //必须包含小时分钟，否则默认8点
+                distance: 48,               //整数
+                current : "2014-10-22 18:00",
+                items: [{
+                    key: "111",
+                    name: "1#泵",
+                    type: "CSP",
+                    data: [{ t: "2014-10-22 00:00", v: 1 }, { t: "2014-10-22 20:00", v: 0 }]
+                }, {
+                    key: "222",
+                    name: "2#泵",
+                    type: "RSP",
+                    data: dd
+                }, {
+                    key: 3,
+                    name: "白洋湾出厂压力",
+                    type: "PRESSURE",
+                    data: [{ t: "2014-10-22 00:00", v: 0.354 }, { t: "2014-10-22 12:00", v: 0.346 }]
+                }]
+            });
+            
+            //elm.style.height = ctrl.GetCtrlHeight();
+
+            //ctrl.ItemCreate({ key: "111", name: "泵 1#", type: "CSP" });
+            //ctrl.ItemCreate({ key: "222", name: "泵 2#", type: "RSP" });
+            //ctrl.ItemCreate({ key: 3, name: "白洋湾 1# 出厂压力", type: "PRESSURE" });
+
+            //ctrl.AddData("111", ["2014-06-23", 1, "2014-06-23 20:00", 1]);
+            //ctrl.AddData("111", ["2014-06-23 12:00", 0, "2014-06-23 22:00", 0]);
+            //ctrl.AddData("222", ["2014-06-23", 0, "2014-06-23 12:00", 1]);
+            //ctrl.AddData(3, ["2014-06-23", 0.354, "2014-06-23 12:00", 0.346]);
+
+            //ctrl.Refresh({ start: "2014-06-23 00:00", current: "2014-06-23 12:00" });
+
+            //new Dygraph(document.getElementById("cur"), exampledata, {
+            //    legend: 'always',
+            //    title: 'NYC vs. SF',
+            //    showRoller: true,
+            //    rollPeriod: 1,
+            //    customBars: false,
+            //    labels: ["x", "A", "B"],
+            //});
+        };
+
+        var val = 0;
+        function OnRefresh() {
+            val = Math.abs(val - 1);
+            ctrl.AddData("111", ["2014-06-23", val]);
+            ctrl.Refresh();
+        }
+
+
+    </script>
+</head>
+<body onload="onload();" style="margin: 0px; background-color:silver;">
+    <input type="button" value="刷新" onclick="OnRefresh();"/>
+    <input type="text" value="" id="txt" style="width:600px;"  />
+    <!-- width & height -->
+    <div id="cvs" style="top:100px; left:50px; width:1200px; position:absolute; border:solid 1px red;">
+        <img src="./img/Update.png" title="设置" style="width: 16px; height: 16px; cursor: pointer; position: absolute; top: 2px; right: 10px;" />
+        <img src="./img/Update.png" title="取消" style="width: 16px; height: 16px; cursor: pointer; position: absolute; top: 2px; right: 30px; " />
+        <img src="./img/Update.png" title="保存" style="width: 16px; height: 16px; cursor: pointer; position: absolute; top: 2px; right: 50px;" />
+        <img src="./img/Update.png" title="新增" style="width: 16px; height: 16px; cursor: pointer; position: absolute; top: 2px; right: 70px;" />
+        <img src="./img/Update.png" title="删除" style="width: 16px; height: 16px; cursor: pointer; position: absolute; top: 2px; right: 90px;" />
+        <img src="./img/Update.png" title="修改" style="width: 16px; height: 16px; cursor: pointer; position: absolute; top: 2px; right: 110px;" />
+    </div>
+    <div id="cur" style="width: 800px; height: 200px; top:300px; left:200px; position:absolute; border:solid 1px blue;"></div>
+</body>
+</html>

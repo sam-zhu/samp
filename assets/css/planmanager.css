@@ -1,0 +1,20 @@
+﻿.text-error {
+    color:red;
+}
+
+.errorstyle {
+    text-align: left;
+    padding-left: 20px;
+    color:red;
+}
+
+.solution-loading {
+    position:absolute;
+    top:34px;
+    left:0;
+    width:330px;
+    height:411px;
+    background-color:#999999;
+    z-index:1111111111111111111;
+    opacity: 0.5;
+}

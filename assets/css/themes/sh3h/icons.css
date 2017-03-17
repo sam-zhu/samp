@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?jfvzo1');
+	src:url('fonts/icomoon.eot?#iefixjfvzo1') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?jfvzo1') format('truetype'),
+		url('fonts/icomoon.woff?jfvzo1') format('woff'),
+		url('fonts/icomoon.svg?jfvzo1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e600";
+}
+.icon-parameter:before {
+	content: "\e601";
+}
+.icon-query:before {
+	content: "\e602";
+}
+.icon-repeat:before {
+	content: "\e603";
+}
+.icon-settings:before {
+	content: "\e604";
+}
+.icon-tools:before {
+	content: "\e605";
+}
+.icon-affairs-m:before {
+	content: "\e606";
+}
+.icon-facilities-m:before {
+	content: "\e607";
+}
+.icon-pipes-anal:before {
+	content: "\e608";
+}
+.icon-locationmap:before {
+	content: "\e609";
+}
+.icon-webmain:before {
+	content: "\e60a";
+}
+.icon-layer:before {
+	content: "\e60b";
+}
+.icon-d-select:before {
+	content: "\e60c";
+}
+.icon-l-select:before {
+	content: "\e60d";
+}
+.icon-a-select:before {
+	content: "\e60e";
+}
+.icon-screenshot:before {
+	content: "\e60f";
+}
+.icon-zoomin:before {
+	content: "\e610";
+}
+.icon-zoomout:before {
+	content: "\e611";
+}
+.icon-search02:before {
+	content: "\e612";
+}
+.icon-move:before {
+	content: "\e613";
+}
+.icon-map:before {
+	content: "\e614";
+}
+.icon-dis-measure:before {
+	content: "\e615";
+}
+.icon-a-measure:before {
+	content: "\e616";
+}
+.icon-fr-zoom:before {
+	content: "\e617";
+}
+.icon-al-select:before {
+	content: "\e618";
+}
+.icon-label-pos:before {
+	content: "\e619";
+}
+.icon-coordinate-pos:before {
+	content: "\e61a";
+}
+.icon-draw-pos:before {
+	content: "\e61b";
+}
+.icon-eyeout:before {
+	content: "\e61c";
+}
+.icon-eyein:before {
+	content: "\e61d";
+}
+.icon-picture:before {
+	content: "\e61e";
+}
+.icon-warn02:before {
+	content: "\e61f";
+}
+.icon-c-query:before {
+	content: "\e620";
+}
+.icon-lock01:before {
+	content: "\e621";
+}
+.icon-pressure:before {
+	content: "\e622";
+}
+.icon-flow:before {
+	content: "\e623";
+}
+.icon-detail02:before {
+	content: "\e624";
+}
+.icon-u-quiry:before {
+	content: "\e625";
+}
+.icon-quiry-ma:before {
+	content: "\e626";
+}
+.icon-o-target:before {
+	content: "\e627";
+}
+.icon-p-inspect:before {
+	content: "\e628";
+}
+.icon-valve-op:before {
+	content: "\e629";
+}
+.icon-washworks:before {
+	content: "\e62a";
+}
+.icon-burstrecord:before {
+	content: "\e62b";
+}
+.icon-bus-in02:before {
+	content: "\e62c";
+}

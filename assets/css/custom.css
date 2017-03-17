@@ -1,0 +1,189 @@
+body {
+    overflow: hidden;
+}
+
+
+/* Index.html */
+.brand-title {
+    margin-left: 69px;
+    margin-top: 12px;    
+}
+
+.brand-title span {
+    color: white; 
+    font-size: 24px;
+    font-family: 'Microsoft YaHei'
+}
+
+
+/* 地图标签样式 */
+.map-label {    
+    color: #693B00;
+    text-align: center;
+    width: 60px;
+    box-shadow: 0 0 4px #FFE19F;
+    background-color: rgba(255,225,159,0.6);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+/* 模态对话框样式 */
+.modal-dialog {
+    margin-top: 150px;
+}
+
+/* 调整样式，modal对话框中的portlet需要去掉底部的留白 */
+.modal-content .portlet {
+    margin-bottom: -25px;
+}
+/* 调整图层属性的from样式 */
+div.propertyDiv .form-body {
+    padding:0;
+}
+
+div.propertyDiv .form-actions {
+    margin-top:0;
+}
+/* 调整右侧样式 */
+.form-body {
+    padding:0;
+}
+
+.form-actions {
+    margin-top:0;
+}
+
+.chartTitle a {
+    margin:-2px;
+}
+.chartTitle span {
+    margin:-2px 3px;
+}
+.chartTd {
+    width: 16px;
+    height: 16px;
+    margin: 6px auto;
+}
+.textbar1 span {
+    float:left;
+    margin:5px;
+}
+.textbar1 input,.textbar1 select {
+    float: left;
+    margin: 0 10px;
+}
+
+
+/*指令状态的label样式*/
+.label-dark {
+  background-color: #555555 !important;
+}
+
+/*解决accordian中的datetimepicker显示不全的问题*/
+.panel-group .panel {
+    overflow: inherit;
+}
+
+/*解决jstree在dropdown-menu中显示不正常的问题*/
+.dropdown-tree .dropdown-menu li > a {
+  display: initial;
+  padding: initial;
+}
+
+.colorpicker {
+    z-index: 999999999999999999;
+}
+
+.schemeMenu ul {
+    padding-left:20px;
+}
+.schemeMenu {
+    margin-left: 25px;
+}
+.schemeMenu li {
+    display: block;  
+    cursor: pointer;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+}
+.schemeMenu a {
+    display: block;
+    text-decoration:none;
+    color:#233f62;
+    font-weight: 300;
+    text-shadow: none !important;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+}
+.schemeLink:hover {
+    background-color:#66c7e2;
+    color:#FFF;
+}
+.schemeLink {
+    background-color:#ceedf6;
+}
+
+.ui-draggable-dragging {
+    opacity: 0.5;
+}
+.artwork_label {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    /*background: rgba(255, 0, 0, 0.5);*/
+    color: black;
+    text-align: center;
+    display: inline-block;
+    cursor: move;
+}
+[ng-drag] {
+}
+
+.flotPoints {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.chartPoint {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+}
+
+.grayGrid {
+    border-top:solid 1px #d4d4d4;
+    border-left:solid 1px #d4d4d4;
+    border-bottom:solid 1px #d4d4d4;
+    background:#fdfdfd;
+}
+.grayGrid th,.grayGrid td {
+    text-align:center;
+    padding: 5px;
+}
+.grayGrid td {
+    border-right:solid 1px #d4d4d4;
+}
+.grayGrid th {
+    border-right:solid 1px #d4d4d4;
+    border-bottom:solid 1px #d4d4d4;
+    background: #f3f3f3;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));
+    background: -ms-linear-gradient(bottom, #eee, #fff);
+    background: -moz-linear-gradient(center bottom, #eee 0, #fff 100%);
+    background: -o-linear-gradient(#fff, #eee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+}
+.grayGrid tr:nth-child(odd) {
+    background: #f3f3f3;
+}
+.htd {
+    padding: 10px;
+}
+
+.search-input-top {
+    margin-top: 20px;
+    margin-right:50px;
+    width: 300px;
+}

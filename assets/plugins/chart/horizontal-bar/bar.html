@@ -1,0 +1,85 @@
+﻿<div class="portlet box grey">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-edit"></i>状态设置
+        </div>
+        <div class="tools">
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form name="barForm" class="form-horizontal" role="form" novalidate ng-submit="">
+            <div class="form-body">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">
+                        名称:&nbsp;
+                    </label>
+                    <div class="col-md-10">
+                        <input name="txtName" type="text" class="form-control" ng-model="ObjectName" ng-disabled="isDisabled" />
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': isInvalid('txtTime')}">
+                    <label class="col-md-2 control-label">
+                        <span class="required">*&nbsp;</span>时间:&nbsp;
+                    </label>
+                    <div class="col-md-10">
+                        <input name="txtTime" type="text" class="form-control" ng-model="StatusTime" ng-disabled="isTimeDisabled" ng-pattern="" id="txtTime" 
+                               data-datetimeselect data-options="datetimepickerOptions" />
+                        <!--<span class="help-block" ng-show="isInvalid('txtTime','min')">可编辑的时间范围在 2014-10-10 12:00 至 2015-10-12 23:00</span> min="2015-10-10 12:00" max="2013-10-10 12:00"
+                        <span class="help-block" ng-show="isInvalid('txtTime','max')">可编辑的时间范围在 2014-10-10 12:00 至 2015-10-12 23:00</span>-->
+                    </div>
+                </div>
+                <div class="form-group" ng-if="isShow('CSP')">
+                    <label class="col-md-2 control-label">
+                        <span class="required">*&nbsp;</span>状态:&nbsp;
+                    </label>
+                    <div class="col-md-10">
+                        <div class="input-group">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn blue" ng-class="{'active': isActive(1)}">
+                                    <input type="radio" name="txtOpen" class="toggle" ng-model="StatusValue" checked ="checked" >开
+                                </label>
+                                <label class="btn blue" ng-class="{'active': isActive(0)}">
+                                    <input type="radio" name="txtClose" class="toggle" ng-model="StatusValue">关
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': isInvalid('txtPressure')}" ng-if="isShow('PRESSURE')">
+                    <label class="col-md-2 control-label">
+                        <span class="required">*&nbsp;</span>压力:&nbsp;
+                    </label>
+                    <div class="col-md-10">
+                        <div class="input-group">
+                            <input name="txtPressure" type="text" class="form-control" placeholder="请输入压力值" ng-model="StatusValue" />
+                            <span class="input-group-addon">MPa</span>
+                        </div>
+                        <span class="help-block" ng-show="isInvalid('txtPressure','number')">压力值数字无效</span>
+                        <span class="help-block" ng-show="isInvalid('txtPressure','min')">压力值有效范围在 0Mpa 至 0.4MPa</span>
+                        <span class="help-block" ng-show="isInvalid('txtPressure','max')">压力值有效范围在 0Mpa 至 0.4MPa</span>
+                    </div>
+                </div>
+                <div class="form-group" ng-class="{'has-error': isInvalid('txtRSP')}" ng-if="isShow('RSP')">
+                    <label class="col-md-2 control-label">
+                        <span class="required">*&nbsp;</span>频率:&nbsp;
+                    </label>
+                    <div class="col-md-10">
+                        <div class="input-group">
+                            <input name="txtRSP" type="number" class="form-control" placeholder="请输入频率值" ng-model="StatusValue" min="45" max="55" />
+                            <span class="input-group-addon">Hz</span>
+                        </div>
+                        <span class="help-block" ng-show="isInvalid('txtRSP','number')">频率值数字无效</span>
+                        <span class="help-block" ng-show="isInvalid('txtRSP','min')">频率值有效范围在 45Hz 至 55Hz</span>
+                        <span class="help-block" ng-show="isInvalid('txtRSP','max')">频率值有效范围在 45Hz 至 55Hz</span>
+                    </div>
+                </div>
+                <button id="btnSave" type="submit" class="btn blue align-right" ng-click="save()">
+                    <i class="fa fa-save"></i>&nbsp;确定
+                </button>
+                <button id="btnCancel" type="button" class="btn default align-right" ng-click="cancel()">
+                    <i class="fa fa-adjust"></i>&nbsp;取消
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

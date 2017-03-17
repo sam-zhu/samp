@@ -1,0 +1,98 @@
+﻿body {
+}
+
+.bumpCspGreen {
+    background: url(../../partials/kpi/img/bumpgreen.gif) no-repeat bottom;
+    font-size: 8px;
+    color: #60707f;
+    height: 28px;
+    float: left;
+    width: 24px;
+    line-height: 10px;
+    margin: 8px 0 8px 30px;
+    cursor: pointer;
+}
+.bumpCspRed {
+    background: url(../../partials/kpi/img/bumpred.gif) no-repeat bottom;
+    font-size: 8px;
+    color: #60707f;
+    height: 28px;
+    float: left;
+    width: 24px;
+    line-height: 10px;
+    margin: 8px 0 8px 30px;
+    cursor: pointer;
+}
+.bumpRsp {
+    background: url(../../partials/kpi/img/bumpgreen2.gif) no-repeat bottom;
+    font-size: 8px;
+    color: #60707f;
+    height: 28px;
+    float: left;
+    width: 24px;
+    line-height: 10px;
+    margin: 8px 0 8px 30px;
+    cursor: pointer;
+}
+
+.valvetable {    
+    width: 232px;
+    margin-top:5px;
+    margin-bottom:-8px;
+    margin-bottom:30px; 
+    border: grey solid 1px;
+    border-collapse: collapse;
+    color:#728492;
+    height:45px;
+}
+
+.pipetable th {
+    background-color:#7f8f9f;
+    color:white;
+    font-weight:normal;
+    height:33px;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.pipetable td {
+line-height:22px;
+height:33px;
+padding:5px 0;
+color:black;
+text-align:center;
+vertical-align:middle;
+    }
+
+.pfltitle {
+        background-color: #7f8f9f;
+    color: white;
+    height: 33px;
+    width: 50%;
+    font-size: larger;
+    font-family: -webkit-body;
+    font-weight: bolder;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pipeRow1 {
+        width: 100%;
+    float: left;
+    position: relative;
+}
+
+.pipelabel {
+        background-color: #7f8f9f;
+    float: left;
+    color: white;
+}
+
+
+.resultpoint {
+    position: absolute;    
+    width: 100px;    
+    height: 100px;      
+}

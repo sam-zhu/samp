@@ -1,0 +1,151 @@
+﻿body {
+}
+.artbackground {
+background:rgba(0,0,0,0.2) none repeat scroll !important;
+}
+
+
+.blankback {
+width: 420px;
+height: 260px;
+float:right;
+position: relative;
+top: -600px;
+left: -348px;
+}
+
+.rightlist {
+width: 170px;
+position: absolute;
+/*height:700px;*/
+/*top: 45px;*/
+top:10px;
+right: 5px;
+z-index: 3500;
+/*opacity:0.01;*/
+}
+.rightTitle {
+    margin-left: -20px;
+}
+
+.backiframe {
+    width:99%;
+    height:99%;
+    z-index:600;
+    opacity:0.1;
+    position:absolute;
+}
+
+.symbolUploadError {
+    font-weight: 600;
+    color: red;
+    font-size: larger;
+}
+
+.a-upload {
+    background-color: #e5e5e5;
+        padding: 4px 10px;
+    height: 34px;
+    line-height: 25px;
+    position: absolute;
+    left: 209px;
+    cursor: pointer;
+    color: #333333;
+    /*background: #fafafa;*/
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+        width: 202px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+
+.uploadbtn {
+    line-height: 20px;
+    position: absolute;
+    left: 258px;
+    padding: 1px 10px;
+}
+
+
+.uptextcss {
+       width: 153px;
+    height: 25px;
+    border-top: 1px solid green;
+    border-left: 1px solid green;
+   background-color: #CCC;
+    color: blue;
+}
+
+
+.upstatuscss {
+    position: absolute;
+    left: 314px;
+    bottom: 208px;
+    font-weight: 600;
+    color: red;
+}
+
+.txteditunit {
+position: absolute;
+    right: 204px;
+    
+}
+
+.overimg {
+        width: 120px;
+    height: 120px;
+    position: absolute;
+    background-color: white;
+    top: 647px;
+    left: 119px;
+    z-index: 2500;
+    display: none;
+}
+
+
+.artmenutool {
+position: absolute;
+    margin-top: 16px;
+/*top: 76px;*/
+    left: 291px;
+    list-style-type: none;
+    width: 100%;    
+    float: left;
+    z-index:10000;
+}
+.artmenutool li{
+    float:left;
+}
+
+
+.choicein {
+    box-shadow: 2px 2px 15px #565656;
+}
+.choiceout {
+    box-shadow: none;
+}
+
+.labelformgroup {
+    margin-left: -74px;
+    margin-top: 10px;
+}
